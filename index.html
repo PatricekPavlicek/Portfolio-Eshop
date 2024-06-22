@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/uvodni-obrazovka/index.css">
+    <link rel="stylesheet" href="/front-end/header-footer/header-footer.css">
+    <title>TeleCorp</title>
+</head>
+<body>
+    <!-- Header for wide devices -->
+    <header id="header-wide">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+            <a href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+        <div class="right">
+            <a href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+        </div>
+    </header>
+    
+    <!-- Header for narrow devices -->
+    <header id="header-narrow" class="header-menu-narrow">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+        </div>
+        <div class="right">
+            <a class="cart-button" href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </button>
+        </div>
+
+        <div class="side-menu">
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle rectangle-mid"></div>
+                <div class="rectangle"></div>
+            </button>
+            <a id="first-item" href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+    </header>
+
+    <!-- Headers end -->
+    <!-- Content start -->
+
+    <main>
+        <a href="/front-end/seznam-sluzeb/sluzby.html">
+            <section class="item" id="item-services">
+                <h2>IT Služby</h2>
+                <button>Pokračovat</button>
+                <div class="progress-bar-container" id="progress-bar-container-service"></div>
+            </section>
+        </a>
+        <a href="/front-end/obchod/eshop.html">
+            <section class="item" id="item-merch">
+                <h2>Eshop</h2>
+                <button>Pokračovat</button>
+                <div class="progress-bar-container" id="progress-bar-container-merch"></div>
+            </section>
+        </a>
+    </main>
+</body>
+<script src="/front-end/uvodni-obrazovka/progress-bar.js"></script>
+<script src="/front-end/uvodni-obrazovka/style-script.js"></script>
+<script src="/front-end/header-footer/header.js"></script>
+</html>
