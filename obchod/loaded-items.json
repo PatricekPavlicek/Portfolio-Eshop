@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Počítač superrychlý",
+        "price": 30999,
+        "discount": 10,
+        "simple_description": "Tento počítač je fakt rychlý",
+        "avaliable_amount": 2,
+        "rating": 5,
+        "tags": ["použité zboží"],
+        "img": "/front-end/resources/obchod/product-pc.webp"
+    },
+    {
+        "name": "Nějaké tričko",
+        "price": 499,
+        "discount": 0,
+        "simple_description": "Super triko, určitě kupte vy zmrdi",
+        "avaliable_amount": 14,
+        "rating": 4.3,
+        "tags": ["super cena", "novinka", "child labor made"],
+        "img": "/front-end/resources/obchod/tshirt.png"
+    },
+    {
+        "name": "Nějaké tričko 2",
+        "price": 499,
+        "discount": 0,
+        "simple_description": "Super triko, určitě kupte vy zmrdi",
+        "avaliable_amount": 14,
+        "rating": 0,
+        "tags": [],
+        "img": "/front-end/resources/obchod/tshirt.png"
+    },
+    {
+        "name": "Nějaké tričko 3",
+        "price": 499,
+        "discount": 0,
+        "simple_description": "Super triko, určitě kupte vy zmrdi",
+        "avaliable_amount": 14,
+        "rating": 0,
+        "tags": ["cigan"],
+        "img": "/front-end/resources/obchod/tshirt.png"
+    },
+    {
+        "name": "Nějaké tričko 4",
+        "price": 499,
+        "discount": 0,
+        "simple_description": "Super triko, určitě kupte vy zmrdi",
+        "avaliable_amount": 14,
+        "rating": 4,
+        "tags": ["super cena", "šetrné k přírodě"],
+        "img": "/front-end/resources/obchod/tshirt.png"
+    }
+]

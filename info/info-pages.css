@@ -1,0 +1,209 @@
+body{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: rgb(15,15,15);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 95vw;
+}
+
+.section-heading{
+    color: #00A7E1;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.card-container{
+    margin: 70px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-container .card{
+    padding: 50px;
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    transition: width 350ms, height 350ms, background-color 350ms;
+}
+
+.card-container .card:hover{
+    background-color: #00A7E1;
+    cursor: pointer;
+}
+
+.card-container .selected-card{
+    background-color: #00A7E1;
+    width: 21vw;
+    height: 21vw;
+}
+
+.card-container .selected-card h2::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 150px;
+    height: 5px;
+    transform: translate(0px, 30px);
+    transition: width 500ms;
+}
+
+.card img{
+    width: 5vw;
+    height: 5vw;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.card h2{
+    font-size: 30px;
+}
+
+.card h2::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    transform: translate(0px, 30px);
+}
+
+.paragraph-container{
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph{
+    font-size: 20px;
+    width: 70%;
+}
+
+.paragraph p::after{
+
+}
+
+.paragraph span{
+    font-size: 105%;
+    font-weight: 500;
+    color: #00A7E1;
+}
+
+#button-section{
+    margin: 15px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-section a{
+    margin-top: 100px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    width: 400px;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: background-color 350ms;
+}
+
+#button-section a:hover{
+    cursor: pointer;
+    background-color: #00A7E1;
+}
+
+@media screen and (max-width: 767px){
+    section{
+        max-width: 80vw;
+    }
+
+    .section-heading{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .card-container{
+        margin: 10px 0;
+        flex-direction: column;
+    }
+
+    .card-container .card{
+        width: 70%;
+        height: 20px;
+        margin: 20px 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .card-container .selected-card h2::after{
+        display: none;
+    }
+
+    .card h2{
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .card h2::after{
+        display: none;
+    }
+
+    #button-section button{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px 30px;
+    }
+
+    .paragraph-container{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragraph{
+        width: 100%;
+    }
+
+    .paragraph::after{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1040px){
+    .card-container{
+        margin: 20px 0;
+    }
+
+    .card-container .card{
+        padding: 20px;
+        max-width: 20vw;
+    }
+
+    .card h2{
+        font-size: 20px;
+    }
+}

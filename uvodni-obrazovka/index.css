@@ -1,0 +1,115 @@
+body *{
+    transition: background-color 1500ms ease;
+}
+
+main{
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 45vw;
+    max-width: 800px;
+    height: calc(100vh - 120px);
+    margin: 0 1% 0 1%;
+}
+
+.item{
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 250ms ease, background-image 1000ms ease;
+}
+
+.item h2{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    width: 60%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 30px;
+    transition: box-shadow 200ms;
+}
+
+.item button{
+    position: absolute;
+    bottom: 50px;
+    border-radius: 20px;
+    padding: 20px 60px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 400ms ease;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.item button:hover{
+    cursor: pointer;
+    background-color: #00A7E1;
+}
+
+.progress-bar-container{
+    height: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar-outside{
+    height: 5px;
+    background-color: rgb(38, 38, 38);
+    transition: none;
+    margin: 5px;
+}
+
+.progress-bar-inside{
+    height: inherit;
+    border-radius: inherit;
+    background-color: #00A7E1;
+}
+
+.theme-toggle{
+    margin: 50px;
+}
+
+@media screen and (max-width: 1050px){
+    main{
+        flex-direction: column;
+    }
+
+    main a{
+        width: 70vw;
+        height: 600px;
+    }
+
+    #item-merch{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    main a{
+        width: 90vw;
+        height: 400px;
+    }
+}

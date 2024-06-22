@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="obchod.css">
+    <link rel="stylesheet" href="product-item.css">
+    <link rel="stylesheet" href="/front-end/header-footer/header-footer.css">
+    <title>TeleCorp - Eshop</title>
+</head>
+<body>
+    <!-- Header for wide devices -->
+    <header id="header-wide">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+            <a href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+        <div class="right">
+            <a href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+        </div>
+    </header>
+    
+    <!-- Header for narrow devices -->
+    <header id="header-narrow" class="header-menu-narrow">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+        </div>
+        <div class="right">
+            <a class="cart-button" href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </button>
+        </div>
+
+        <div class="side-menu">
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle rectangle-mid"></div>
+                <div class="rectangle"></div>
+            </button>
+            <a id="first-item" href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+    </header>
+
+    <!-- Headers end -->
+    <!-- Content start -->
+
+    <main>
+        <section id="simple-category-section">
+            <div class="simple-category">
+                <div class="img-container">
+                    <img alt="img" src="/front-end/resources/obchod/pc.png">
+                </div>
+                <div class="description-container">
+                    <h4>PC a příslušenství</h4>
+                </div>
+            </div>
+
+            <div class="simple-category">
+                <div class="img-container">
+                    <img alt="img" src="/front-end/resources/obchod/tshirt.png">
+                </div>
+                <div class="description-container">
+                    <h4>Merch</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="filters">
+            <h4>Upřesnit</h4>
+        </section>
+
+        <section id="sort-by">
+            <h4>Seřadit</h4>
+            <!-- For wide screen -->
+            <ul>
+                <li class="li-btn" id="recommended">Doporučené</li>
+                <li class="li-btn" id="low-price">Nejlevnější</li>
+                <li class="li-btn" id="high-price">Nejdražší</li>
+                <li class="li-btn" id="most-selling">Nejprodávanější</li>
+                <li class="li-btn" id="newest">Nejnovější</li>
+            </ul>
+
+            <!-- For narrow screen -->
+            <select name="sort-by">
+                <option value="recommended">Doporučené</option>
+                <option value="low-price">Nejlevnější</option>
+                <option value="high-price">Nejdražší</option>
+                <option value="most-selling">Nejprodávanější</option>
+                <option value="newest">Nejnovější</option>
+            </select>
+        </section>
+
+        <section id="content">
+            <div class="product-container">
+                <div class="top">
+                    <ul class="tags">
+                        <li>
+                            <p class="tag">Použité zboží</p>
+                        </li>
+                    </ul>
+                    <p class="amount">5 Ks</p>
+                    <div class="rating-container">
+                        <img class="star" src="/front-end/resources/obchod/star-yellow.png" alt="star">
+                        <p>4.6 / 5</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h5 class="product-name">Super počítač 3000</h5>
+                    <p class="product-description">Tohle je ten nejlepší počítač na světě kdyby někdo nevěděl</p>
+                    <p class="product-price">39 890 Kč</p>
+                    <button class="product-button">
+                        <img class="button-img" src="/front-end/resources/obchod/cart-black.png" alt="cart">
+                        <p class="button-text">Do košíku</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="display-products.js"></script>
+<script src="/front-end/header-footer/header.js"></script>
+<script src="obchod-style.js"></script>
+</html>

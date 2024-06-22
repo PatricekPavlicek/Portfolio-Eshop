@@ -1,0 +1,50 @@
+#navigation{
+    width: 100vw;
+    max-width:100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+#navigation .card{
+    width: calc(100vw / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0
+}
+
+#navigation .card p{
+    background-color: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+}
+
+#navigation .card-selected{
+    background-color: #00A7E1;
+}
+
+#navigation .card-selected p{
+    color: #00A7E1;
+}
+
+@media screen and (max-width: 680px){
+    #navigation .card{
+        font-size: 2.5vw;
+    }
+
+    #navigation .card p{
+        width: 8vw;
+        height: 8vw;
+        font-size: 4vw;
+    }
+}

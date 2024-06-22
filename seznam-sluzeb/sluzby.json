@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Optické sítě",
+        "description": "Modernizujeme vaši síť pro rychlý a spolehlivý internet s rychlostí až 100 Gb/s pomocí optické technologie. Nabízíme plánování, instalaci, úpravy a rozšíření optické sítě. Z našeho vlákna pro vás vytěžíme maximum!",
+        "icon_file_path": "/front-end/resources/sluzby/network-white.png",
+        "link": "/front-end/info/opticke-site.html"
+    },
+    {
+        "name": "Webové stránky a aplikace",
+        "description": "Budujeme vaši digitální vizitku. Naše služby zahrnují vývoj webových stránek a aplikací, které přesně odpovídají vašim požadavkům a potřebám",
+        "icon_file_path": "/front-end/resources/sluzby/code-white.png",
+        "link": "/front-end/info/webove-stranky.html"
+    },
+    {
+        "name": "Sestava PC", 
+        "description": "Pomůžeme vám s výběrem a sestavením počítačů na míru. Navrhneme vhodné komponenty podle vašich potřeb a přání a sestavíme PC včetně instalace operačního systému, abyste měli perfektní sjednocené pracovní stroje podle vašich představ.",
+        "icon_file_path": "/front-end/resources/icons/graphics-card.png",
+        "link": "/front-end/info/skladani-pc.html"
+    },
+    {
+        "name": "Navštivte náš eshop!",
+        "description": "Na našem eshopu nabízíme nejen merch, ale i počítače a komponenty které se používaly ve školním provozu a pouze čekají na nový život. Určitě vás zaujmou jejich atraktivní ceny!",
+        "icon_file_path": "/front-end/resources/icons/navstivtenaseshop.png",
+        "link": "/front-end/obchod/eshop.html"
+    }
+]

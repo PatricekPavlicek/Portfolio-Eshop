@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/header-footer/header-footer.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="doprava-dodaci-udaje.css">
+    <title>TeleCorp - Dodací Údaje</title>
+</head>
+<body>
+     <!-- Header for wide devices -->
+     <header id="header-wide">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+            <a href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+        <div class="right">
+            <a href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+        </div>
+    </header>
+    
+    <!-- Header for narrow devices -->
+    <header id="header-narrow" class="header-menu-narrow">
+        <div class="left">
+            <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+        </div>
+        <div class="right">
+            <a class="cart-button" href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </button>
+        </div>
+
+        <div class="side-menu">
+            <button class="narrow-menu-button">
+                <div class="rectangle"></div>
+                <div class="rectangle rectangle-mid"></div>
+                <div class="rectangle"></div>
+            </button>
+            <a id="first-item" href="https://www.telecorp.cz" class="h-item">O nás</a>
+            <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+            <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+        </div>
+    </header>
+
+    <!-- Headers end -->
+    <!-- Content start -->
+
+    <section id="navigation">
+        <div id="c1" class="card">
+            <p>1</p>
+            <h2>Košík</h2>
+        </div>
+        <div id="c2" class="card card-selected">
+            <p>2</p>
+            <h2>Doprava a platba</h2>
+        </div>
+        <div id="c3" class="card">
+            <p>3</p>
+            <h2>Dodací údaje</h2>
+        </div>
+    </section>
+
+    <form>
+      <div class="section-container sc-first">
+        <div class="container">
+          <section id="delivery-method">
+            <h2>Způsob dopravy</h2>
+            <!--
+            <div class="option">
+              <input type="radio" id="pickup" name="delivery" value="pickup">
+              <label for="pickup"><p>Výdejní místa zásilkovny</p><img src="/front-end/resources/question-mark-1019820_1280.webp"></label>
+            </div>
+            -->
+            <div class="option">
+              <input type="radio" id="home-delivery" name="delivery" value="home-delivery">
+              <label for="home-delivery"><p>Doručení na adresu</p><img src="/front-end/resources/icons/package-black.png"></label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" id="personal-pickup" name="delivery" value="personal-pickup">
+              <label for="personal-pickup"><p>Osobní vyzvednutí</p><img src="/front-end/resources/icons/package-box-black.png"></label>
+            </div>
+          </section>
+        
+          <section id="payment-method">
+            <h2>Způsob Platby</h2>
+            
+            <div class="option">
+              <input type="radio" id="online-card" name="payment" value="online-card">
+              <label for="online-card"><p>Kartou online</p><img src="/front-end/resources/icons/credit-card-black.png
+                "></label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+              <label for="bank-transfer"><p>Bankovním převodem</p><img src="/front-end/resources/icons/bank-black.png"></label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" id="cash-on-delivery" name="payment" value="cash-on-delivery">
+              <label for="cash-on-delivery"><p>Dobírkou</p><img src="/front-end/resources/icons/money-black.png"></label>
+            </div>
+          </section>
+        </div>
+
+        <div class="buttons-container">
+          <a class="btn-previous" href="/front-end/kosik/kosik.html">Zpět</a>
+          <a class="btn-next">Pokračovat</a>
+        </div>
+      </div>
+
+      <div class="section-container sc-second">
+        <div class="left-container">
+          <section id="contact-details">
+            <h2>Kontaktní údaje</h2>
+  
+            <div class="input-box">
+              <label for="fname">Jméno</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+  
+            <div class="input-box">
+              <label for="lname">Příjmení</label>
+              <input type="text" id="lname" name="lname">
+            </div>
+  
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+  
+            <div class="input-box">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+            </div>
+          </section>
+        </div>
+
+        <div class="right-container">
+          <section id="delivery-address">
+            <h2>Dodací adresa</h2>
+  
+            <div class="input-box">
+              <label for="street">Ulice a č.p.</label>
+              <input type="text" id="street" name="street">
+            </div>
+  
+            <div class="input-box">
+              <label for="city">Obec</label>
+              <input type="text" id="city" name="city">
+            </div>
+  
+            <div class="input-box">
+              <label for="zip">PSČ</label>
+              <input type="text" id="zip" name="zip">
+            </div>
+
+            <div class="option different-address">
+              <input type="checkbox" id="different-address" name="different-address">
+              <label for="different-address"><p>Fakturační adresa se liší od dodací</p></label>
+            </div>
+          </section>
+        
+          <section id="billing-address">
+            <h2>Fakturační adresa</h2>
+  
+            <div class="input-box">
+              <label for="billing-street">Ulice a č.p</label>
+              <input type="text" id="billing-street" name="billing-street">
+            </div>
+  
+            <div class="input-box">
+              <label for="billing-city">Obec</label>
+              <input type="text" id="billing-city" name="billing-city">
+            </div>
+  
+            <div class="input-box">
+              <label for="billing-zip">PSČ</label>
+              <input type="text" id="billing-zip" name="billing-zip">
+            </div>
+  
+            <div class="input-box">
+              <label for="recipient">Adresát</label>
+              <input type="text" id="recipient" name="recipient">
+            </div>
+  
+          </section>
+        </div>
+      </div>
+      
+      <div class="section-container sc-third">
+        <section id="additional-notes">
+          <h2>Poznámka</h2>
+          <textarea minlength="1" maxlength="1000" id="notes" name="notes" rows="4" cols="50"></textarea>
+        </section>
+      
+        <div class="buttons-container">
+          <a class="btn-previous">Zpět</a>
+          <a class="btn-next">Pokračovat</a>
+        </div>
+      </div>
+    </form>
+</body>
+<script src="/front-end/header-footer/header.js"></script>
+<script src="doprava-dodaci-udaje-style-script.js"></script>
+</html>

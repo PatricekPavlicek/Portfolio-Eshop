@@ -1,0 +1,443 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    max-width: 100vw;
+}
+
+body{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 0;
+    margin: 0;
+    background-color: rgb(15,15,15);
+    color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr)); /*continue here*/
+    justify-items: center;
+    gap: 10vw;
+    margin: 0;
+    width: 80vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .top{
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left .image-selector{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .image-selector button{
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 350ms;
+}
+
+.image-selector .left-image-button{
+    transform: rotate(180deg);
+}
+
+.image-selector button:hover{
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+}
+
+.image-selector #main-img{
+    width: 50vw;
+    height: 50vw;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+main .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main .right .tag-container{
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 15vh
+}
+
+main .right .tag-container .tag{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(70, 2, 118);
+    padding: 10px 20px;
+    margin: 15px 15px 0px 0px;
+    transition: box-shadow 300ms;
+}
+
+.tag-container .tag:hover{
+    text-decoration: underline;
+    box-shadow: -5px -5px rgb(33, 1, 56);
+}
+
+main .right .amount{
+    font-size: 17px;
+}
+
+main .right .price-container .sale{
+    font-size: 17px;
+}
+
+main .right .price-container span{
+    font-size: 17px;
+    color: red;
+    margin-left: 30px;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+main .right .price-container .price{
+    font-size: 28px;
+}
+
+main .right .selected-amount-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.selected-amount-container *{
+    margin: 20px 10px;
+}
+
+.selected-amount-container button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0,0,0,1);
+    width: 30px;
+    height: 30px;
+}
+
+
+.selected-amount-container button:hover{
+    cursor: pointer;
+}
+
+.selected-amount-container button:hover{
+    cursor: pointer;
+}
+
+.selected-amount-container button img{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+main .right .add-to-cart{
+    background-color: rgb(70, 2, 118);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+    transition: box-shadow 350ms;
+}
+
+main .right .add-to-cart:hover{
+    cursor: pointer;
+    box-shadow: -10px -10px rgb(40, 2, 67);
+}
+
+main .right .add-to-cart img{
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+main .right .add-to-cart p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.simple-description-container{
+    width: 80vw;
+    padding: 40px;
+}
+
+.simple-description-container p{
+    font-size: 18px;
+}
+
+.simple-description-container p span a{
+    cursor: pointer;
+    color: #00A7E1;
+}
+
+.simple-description-container p span a:hover{
+    text-decoration: underline;
+}
+
+#description{
+    padding: 40px;
+    margin-top: 20px;
+    width: 80vw;
+}
+
+.component-list{
+    list-style-type: none;
+}
+
+.component-list .component-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.component{
+    --underline-width: 20px;
+}
+
+.component-heading h3::after{
+    content: "";
+    transform: translate(-3px, 10px);
+    background-color: rgb(97, 11, 159);
+    display: block;
+    width: var(--underline-width);
+    height: 4px;
+}
+
+.component-heading .btn-display-more{
+    transform: rotate(90deg);
+    margin-left: 30px;
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 350ms, transform 400ms;
+}
+
+.component-heading .btn-display-more:hover{
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+}
+
+.btn-display-more img{
+    width: 30px;
+    height: 30px;
+}
+
+.component-list .component{
+    display: inline;
+    margin-bottom: 20px;
+    padding-right: 500px;
+}
+
+.component-list .component span{
+    margin-left: 5px;
+    color: #00A7E1;
+}
+
+.component-list .component .component-details{
+    font-size: 18px;
+    list-style-type: none;
+    display: none;
+}
+
+.component-list .component .component-details li{
+    margin-top: 5px;
+}
+
+.component-list .component .component-details li span{
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.component-list .component .component-details li span a{
+    text-decoration: udnerline;
+    font-weight: 400;
+    font-size: 19px;
+    color: #2acaff;
+}
+
+/* Phone */
+@media screen and (max-width: 767px){
+    main .right{
+        margin-top: 0;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .right .tag-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 80vw;
+    }
+
+    main .right .tag-container li{
+        width: 100%;
+    }
+
+    main .right .tag-container .tag{
+        text-align: center;
+        display: block;
+        padding: 15px 0;
+        border-radius: 5px;
+    }
+
+    main .right .price-container{
+        padding: 5px 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: rgb(70, 2, 118);;
+    }
+
+    main .right .price-container .sale{
+        display: none
+    }
+
+    main .right .add-to-cart{
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .simple-description-container{
+        width: 80vw;    
+    }
+
+    .simple-description-text span{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    #description{
+        display: block;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #description .component-list{
+        display: block;
+        width: 100%;
+    }
+
+    #description .component-heaing{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #description .component-list .component{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #description .component-heading h3 span{
+        display: block;
+        margin: 10px 0;
+        max-width: 65vw;
+    }
+
+    #description .component-heading h3::after{
+        display: none;
+    }
+
+    #description .component .btn-display-more{
+        position: absolute;
+        right: 20px;
+    }
+
+    #description .component-details{
+        transform: translate(-30px, 0);
+    }
+
+    #description .component-details span{
+        margin-left: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1040px){
+    main .right{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .right .price-container{
+        padding: 0px 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: rgb(70, 2, 118);;
+    }
+
+    
+    main .right .add-to-cart{
+        margin-top: 30px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/header-footer/header-footer.css">
+    <link rel="stylesheet" href="kosik.css">
+    <link rel="stylesheet" href="navigation.css">
+    <title>TeleCorp - Košík</title>
+</head>
+<body>
+        <!-- Header for wide devices -->
+        <header id="header-wide">
+            <div class="left">
+                <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+                <a href="https://www.telecorp.cz" class="h-item">O nás</a>
+                <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+                <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+            </div>
+            <div class="right">
+                <a href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+            </div>
+        </header>
+        
+        <!-- Header for narrow devices -->
+        <header id="header-narrow" class="header-menu-narrow">
+            <div class="left">
+                <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+            </div>
+            <div class="right">
+                <a class="cart-button" href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+                <button class="narrow-menu-button">
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                </button>
+            </div>
+    
+            <div class="side-menu">
+                <button class="narrow-menu-button">
+                    <div class="rectangle"></div>
+                    <div class="rectangle rectangle-mid"></div>
+                    <div class="rectangle"></div>
+                </button>
+                <a id="first-item" href="https://www.telecorp.cz" class="h-item">O nás</a>
+                <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+                <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+            </div>
+        </header>
+    
+        <!-- Headers end -->
+        <!-- Content start -->
+    
+        <section id="navigation">
+            <div id="c1" class="card card-selected">
+                <p>1</p>
+                <h2>Košík</h2>
+            </div>
+            <div id="c2" class="card ">
+                <p>2</p>
+                <h2>Doprava a platba</h2>
+            </div>
+            <div id="c3" class="card">
+                <p>3</p>
+                <h2>Dodací údaje</h2>
+            </div>
+        </section>
+
+        <main>
+            <ul class="cart-items-container">
+
+            </ul>
+    
+            <h3 class="final-price">Celkem <span>174 000</span> Kč</h3>
+            <a class="btn-next" href="doprava-dodaci-udaje.html">Pokračovat</a>
+        </main>
+
+</body>
+<script src="/front-end/header-footer/header.js"></script>
+<script src="/front-end/kosik/load-html.js"></script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produkt.css">
+    <title>TeleCorp - Produkt</title>
+    <link rel="stylesheet" href="/front-end/header-footer/header-footer.css">
+</head>
+<body>
+        <!-- Header for wide devices -->
+        <header id="header-wide">
+            <div class="left">
+                <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+                <a href="https://www.telecorp.cz" class="h-item">O nás</a>
+                <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+                <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+            </div>
+            <div class="right">
+                <a href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+            </div>
+        </header>
+        
+        <!-- Header for narrow devices -->
+        <header id="header-narrow" class="header-menu-narrow">
+            <div class="left">
+                <a href="https://www.telecorp.cz" class="logo-container"><img class="logo" alt="logo" src="/front-end/resources/Logo.png"></a>
+            </div>
+            <div class="right">
+                <a class="cart-button" href="/front-end/kosik/kosik.html"><img src="/front-end/resources/obchod/cart-white.png"></a>
+                <button class="narrow-menu-button">
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                </button>
+            </div>
+    
+            <div class="side-menu">
+                <button class="narrow-menu-button">
+                    <div class="rectangle"></div>
+                    <div class="rectangle rectangle-mid"></div>
+                    <div class="rectangle"></div>
+                </button>
+                <a id="first-item" href="https://www.telecorp.cz" class="h-item">O nás</a>
+                <a href="/front-end/seznam-sluzeb/sluzby.html" class="h-item">Služby</a>
+                <a href="/front-end/obchod/eshop.html" class="h-item">Eshop</a>
+            </div>
+        </header>
+    
+        <!-- Headers end -->
+        <!-- Content start -->
+    
+    <main>
+        <div class="left">
+            <div class="top">
+                <h1 id="product-name"></h1>
+                <div class="rating-container"></div>
+            </div>
+            <div class="image-selector">
+                <!--<button class="left-image-button"><img src="/front-end/resources/produkt/arrow-black.png"></button>-->
+                <img id="main-image" src="/front-end/resources/obchod/product-pc.webp" alt="main-image">
+                <!--<button class="right-image-button"><img src="/front-end/resources/produkt/arrow-black.png"></button>-->
+            </div>
+        </div>
+        <div class="right">
+            <ul class="tag-container"><!-- Filled dynamically using JS --></ul>
+            <p class="amount"><!-- Filled dynamically using JS --></p>
+            <div class="price-container">
+                <h3 class="price"><span class="original-price"><!-- Filled dynamically using JS --></span></h3>
+                <h4 class="sale"><!-- Filled dynamically using JS --></h4>
+            </div>
+            <div class="selected-amount-container">
+                <button id="substract"><img src="/front-end/resources/produkt/minus-white.png"></button>
+                <p id="selected-amount-number">1 Ks</p>
+                <button id="add"><img src="/front-end/resources/produkt/plus-white.png"></button>
+            </div>
+            <button class="add-to-cart">
+                <img src="/front-end/resources/obchod/cart-white.png">
+                <p>Přidat do košíku</p>
+            </button>
+        </div>
+    </main>
+
+    <section class="simple-description-container">
+        <h3 class="heading">Popis</h3>
+        <p class="simple-description-text"><!-- Filled dynamically using JS --></p>
+    </section>
+
+    <section id="description">
+        <h3 class="heading">Detail</h3>
+        <ul class="component-list"><!-- Filled dynamically using JS --></ul>
+    </section>
+
+
+</body>
+<script src="produkt-populate-html.js"></script>
+<script src="produkt-style.js"></script>
+<script src="/front-end/header-footer/header.js"></script>
+</html>
